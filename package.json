@@ -1,8 +1,8 @@
 {
-  "name": "example",
-  "version": "0.0.0",
+  "name": "cycle-playground",
+  "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "author": "Andre Staltz",
+  "author": "Jarl André Hübenthal",
   "license": "MIT",
   "dependencies": {
     "@cycle/dom": "17.5",
