@@ -1,0 +1,30 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Andre Staltz",
+  "license": "MIT",
+  "dependencies": {
+    "@cycle/dom": "17.5",
+    "@cycle/http": "^13.3.0",
+    "@cycle/isolate": "3.0",
+    "@cycle/run": "3.1",
+    "@types/es6-shim": "^0.31.32",
+    "@types/history": "^4.6.0",
+    "cycle-onionify": "^3.3.0",
+    "cyclic-router": "^4.0.5",
+    "switch-path": "^1.2.0",
+    "xstream": "10.8"
+  },
+  "devDependencies": {
+    "browserify": "14.4.x",
+    "mkdirp": "0.5.x",
+    "typescript": "2.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebrowserify": "mkdirp dist && tsc",
+    "browserify": "browserify lib/index.js --outfile dist/index.js",
+    "start": "npm install && npm run browserify && echo 'OPEN index.html IN YOUR BROWSER'"
+  }
+}
