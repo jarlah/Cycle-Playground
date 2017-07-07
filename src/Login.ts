@@ -55,15 +55,10 @@ function Login(sources: LoginSources): LoginSinks {
 
   const vdom$ = user$.map(user =>
     div('.users', [
-      h1("Login now"),
+      h1("Please login"),
       input('.username'),
-      input('.password'),
-      button('.login', 'Get random user'),
-      user === null ? null : div('.user-details', [
-        h1('.user-name', user.name),
-        h4('.user-email', user.email),
-        a('.user-website', {attrs: {href: user.website}}, user.website),
-      ]),
+      input('.password', { attrs: { type: 'password'} }),
+      button('.login', 'Login'),
     ]),
   );
 
